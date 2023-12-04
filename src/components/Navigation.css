@@ -2,11 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-weight: 600;
+  
 }
 
 .logo {
-  font-size: 3em;
+  margin-left: 10px;
 }
 
 .nav {
@@ -17,25 +17,92 @@
 }
 
 .logo img {
-  width: 50px;
+  width: 40px;
 }
 
 ul li{
   /* background-color: blue; */
   list-style: none;
   font-size: 22px;
-  margin: 20px;
   display: flex;
   cursor: pointer;
+  font-weight:500;
 }
 
-ul li:hover {
-  font-weight: 900;
-  border: 1px solid gray;
-  border-radius: 20px;
+#navHome,#navExplore,#navNotification,#navMessages,#navLists,#navCommunities,#navPremium,#navProfile,#navMore{
+    /* background-color: red; */
+    display: flex;
+    width: fit-content;
+    padding: 12px 25px 12px 12px ;
 }
 
 li img {
-  width: 25px;
-  margin: 0 20px 0 -10px;
+    width: 25px;
+    margin: 0px 20px 0px 5px;
+  }
+
+&:has(#home-li:hover)
+#navHome{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
 }
+
+&:has(#explore-li:hover)
+#navExplore{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#notification-li:hover)
+#navNotification{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#messages-li:hover)
+#navMessages{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#lists-li:hover)
+#navLists{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#communities-li:hover)
+#navCommunities{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#premium-li:hover)
+#navPremium{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#profile-li:hover)
+#navProfile{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+&:has(#more-li:hover)
+#navMore{
+    border-radius: 30px;
+    background-color: rgb(50, 49, 49);
+    
+}
+
+
+
