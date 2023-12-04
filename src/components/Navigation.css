@@ -5,20 +5,25 @@
   
 }
 
-.logo {
-  margin-left: 10px;
-}
-
 .nav {
   width: 16vw;
-  padding: 10px 0 0 0;
   /* background-color: pink; */
   /* color: red; */
+  height: 100vh
 }
+
+.logo {
+    margin-left: 10px;
+    padding-top: 10px;
+  }  
 
 .logo img {
     
   width: 40px;
+}
+
+.Nav-contents{
+    text-align: center;
 }
 
 ul li{
@@ -106,8 +111,8 @@ li img {
 }
 
 #Post-btn{
-    margin-top: 5px;
     padding: 15px 100px;
+    margin: 10px auto;
     background-color: rgb(29, 155, 240);
     color: white;
     font-weight: 700;
@@ -119,5 +124,17 @@ li img {
 
 #Post-btn:hover{
     background-color: rgb(25, 146, 228);
+}
+
+.userInfo{
+    display: flex;
+    background-color: rgb(93, 66, 25);
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.userInfo img{
+    width: 50px;
 }
 
