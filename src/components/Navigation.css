@@ -11,13 +11,13 @@
 
 .nav {
   width: 16vw;
-  height: 100vh;
   padding: 10px 0 0 0;
   /* background-color: pink; */
   /* color: red; */
 }
 
 .logo img {
+    
   width: 40px;
 }
 
@@ -107,12 +107,17 @@ li img {
 
 #Post-btn{
     margin-top: 5px;
-    padding: 17px 100px;
+    padding: 15px 100px;
     background-color: rgb(29, 155, 240);
     color: white;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 18px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+}
+
+#Post-btn:hover{
+    background-color: rgb(25, 146, 228);
 }
 

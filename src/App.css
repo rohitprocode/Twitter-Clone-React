@@ -3,12 +3,12 @@
 .Container{
   background-color: black;
   font-family: "Karla", sans-serif;
+  height: 100vh;
 }
 
 .twitter-body{
   color: white;
   width: 80vw;
-  height: 100vh;
   margin:auto;
   /* background-color: gray; */
 }
