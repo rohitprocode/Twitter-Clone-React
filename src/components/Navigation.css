@@ -12,6 +12,7 @@
 .nav {
   width: 16vw;
   height: 100vh;
+  padding: 10px 0 0 0;
   /* background-color: pink; */
   /* color: red; */
 }
@@ -33,7 +34,7 @@ ul li{
     /* background-color: red; */
     display: flex;
     width: fit-content;
-    padding: 12px 25px 12px 12px ;
+    padding: 13px 25px 12px 12px ;
 }
 
 li img {
@@ -44,65 +45,74 @@ li img {
 &:has(#home-li:hover)
 #navHome{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25, 25, 25);
     
 }
 
 &:has(#explore-li:hover)
 #navExplore{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#notification-li:hover)
 #navNotification{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#messages-li:hover)
 #navMessages{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#lists-li:hover)
 #navLists{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#communities-li:hover)
 #navCommunities{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#premium-li:hover)
 #navPremium{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#profile-li:hover)
 #navProfile{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
 &:has(#more-li:hover)
 #navMore{
     border-radius: 30px;
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(25,25,25);
     
 }
 
-
+#Post-btn{
+    margin-top: 5px;
+    padding: 17px 100px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+}
 
