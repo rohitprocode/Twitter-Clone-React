@@ -1,25 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.logo{
-    font-size: 3em;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
 }
 
-.nav{
-    width: 16vw;
-    height: 100vh;
-    /* background-color: pink; */
-    color:red;
+.logo {
+  font-size: 3em;
 }
 
-.logo img{
-    width: 50px
+.nav {
+  width: 16vw;
+  height: 100vh;
+  /* background-color: pink; */
+  /* color: red; */
+}
+
+.logo img {
+  width: 50px;
 }
 
 ul li{
-    list-style: none;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 20px;
+  /* background-color: blue; */
+  list-style: none;
+  font-size: 22px;
+  margin: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+ul li:hover {
+  font-weight: 900;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+li img {
+  width: 25px;
+  margin: 0 20px 0 -10px;
 }
