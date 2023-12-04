@@ -1,0 +1,11 @@
+.Container{
+  background-color: black;
+}
+
+.twitter-body{
+  color: white;
+  width: 80vw;
+  height: 100vh;
+  margin:auto;
+  /* background-color: gray; */
+}

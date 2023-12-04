@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    font-size: 3em;
+}
+
+.nav{
+    width: 16vw;
+    height: 100vh;
+    /* background-color: pink; */
+    color:red;
+}
+
+.logo img{
+    width: 50px
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+}
