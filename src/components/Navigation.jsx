@@ -11,70 +11,71 @@ function Navigation() {
         <ul>
           <li id="home-li">
             <div id="navHome">
-            <img src="../Home.png" alt="logo" />
-            {/* <img src="../Blue_Dot.png" alt="" /> */}
-            <span>Home</span>
+              <img src="../Home.png" alt="logo" />
+              {/* <img src="../Blue_Dot.png" alt="" /> */}
+              <span>Home</span>
             </div>
           </li>
           <li id="explore-li">
             <div id="navExplore">
-            <img src="../Explore.png" alt="logo" />
-            <span>Explore</span>
+              <img src="../Explore.png" alt="logo" />
+              <span>Explore</span>
             </div>
           </li>
-          <li id="notification-li" >
+          <li id="notification-li">
             <div id="navNotification">
-            <img src="../Notification.png" alt="logo" />
-            <span>Notifications</span>
+              <img src="../Notification.png" alt="logo" />
+              <span>Notifications</span>
             </div>
           </li>
           <li id="messages-li">
             <div id="navMessages">
-            <img src="../Messages.png" alt="logo" />
-            <span>Messages</span>
+              <img src="../Messages.png" alt="logo" />
+              <span>Messages</span>
             </div>
           </li>
-          <li id="lists-li" >
+          <li id="lists-li">
             <div id="navLists">
-            <img src="../Lists.png" alt="logo" />
-            <span>Lists</span>
+              <img src="../Lists.png" alt="logo" />
+              <span>Lists</span>
             </div>
           </li>
           <li id="communities-li">
-            <div id="navCommunities" >
-            <img src="../Communities.png" alt="logo" />
-            <span>Communities</span>
+            <div id="navCommunities">
+              <img src="../Communities.png" alt="logo" />
+              <span>Communities</span>
             </div>
           </li>
-          <li id="premium-li" >
+          <li id="premium-li">
             <div id="navPremium">
-            <img src="../twitterX.png" alt="logo" />
-            <span>Premium</span>
+              <img src="../twitterX.png" alt="logo" />
+              <span>Premium</span>
             </div>
           </li>
           <li id="profile-li">
             <div id="navProfile">
-            <img src="../Profile.png" alt="logo" />
-            <span>Profile</span>
+              <img src="../Profile.png" alt="logo" />
+              <span>Profile</span>
             </div>
           </li>
-          <li id="more-li" >
+          <li id="more-li">
             <div id="navMore">
-            <img src="../More.png" alt="logo" />
-            <span>More</span>
+              <img src="../More.png" alt="logo" />
+              <span>More</span>
             </div>
           </li>
         </ul>
 
         <button id="Post-btn">Post</button>
-
       </div>
 
       <div className="userInfo">
-        <img src="" alt="" />
-        <h4>Rohit Rathore</h4>
-        <span className="span1">username</span>
-        <span className="span2">...</span>
+        <img src="../User.png" alt="" />
+        <div className="UserName-content">
+          <h4 className="name">Rohit Rathore</h4>
+          <span className="username">@rohitprocode</span>
+        </div>
+        <span className="Dot-span">...</span>
       </div>
     </div>
   );
