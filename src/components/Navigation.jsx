@@ -65,7 +65,6 @@ function Navigation() {
             </div>
           </li>
         </ul>
-
         <button id="Post-btn">Post</button>
       </div>
 
