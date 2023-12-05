@@ -9,7 +9,7 @@
   width: 16vw;
   /* background-color: pink; */
   /* color: red; */
-  height: 100vh
+  height: 100vh;
 }
 
 .logo {
@@ -128,13 +128,31 @@ li img {
 
 .userInfo{
     display: flex;
-    background-color: rgb(93, 66, 25);
+    border-radius: 50px;
+    justify-content: space-around;
     padding: 10px;
-    border-radius: 30px;
-    justify-content: space-between;
+    width:13rem;
+    position: fixed;
+    bottom: 0;
+    margin: 0 10px;
+    /* background-color: rebeccapurple; */
+}
+
+.userInfo:hover{
+    background-color: rgb(25,25,25);
 }
 
 .userInfo img{
-    width: 50px;
+    /* background-color: pink; */
+    width: 35px;
+}
+
+.name{
+    font-weight: 800;
+}
+
+.username{
+    color: rgb(133, 127, 138);
+    font-weight: 100;
 }
 

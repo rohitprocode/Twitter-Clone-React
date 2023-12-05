@@ -70,14 +70,13 @@ function Navigation() {
 
       <div className="userInfo">
         <img src="../User.png" alt="" />
-        <div className="UserName-content">
-          <h4 className="name">Rohit Rathore</h4>
+        <div>
+          <div className="name">Rohit Rathore</div>
           <span className="username">@rohitprocode</span>
         </div>
-        <span className="Dot-span">...</span>
       </div>
     </div>
   );
 }
-
+  
 export default Navigation;
