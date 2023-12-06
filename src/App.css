@@ -9,6 +9,7 @@
 .twitter-body{
   color: white;
   width: 80vw;
-  margin:auto;
+  margin:auto auto 0 130px;
+  display: flex;
   /* background-color: gray; */
 }

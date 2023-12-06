@@ -6,8 +6,9 @@
 }
 
 .nav {
-  width: 16vw;
-  /* background-color: pink; */
+  width: 18vw;
+  /* background-color: pink;
+   */
   /* color: red; */
   height: 100vh;
 }
@@ -112,7 +113,8 @@ li img {
 
 #Post-btn{
     padding: 15px 100px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-right: 30px;
     background-color: rgb(29, 155, 240);
     color: white;
     font-weight: 700;
