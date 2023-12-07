@@ -1,6 +1,6 @@
 .MidContainer{
 border: 0.5px solid rgb(48, 46, 46);
-width: 40rem;
+width: 37rem;
 }
 
 .header{
@@ -43,8 +43,8 @@ width: 40rem;
 
 .PostContainer{
     border: 0.5px solid rgb(48, 46, 46);
-    height: 115px;
-    padding: 20px;
+    height: 105px;
+    padding: 10px;
     background-color: saddlebrown;
 }
 
