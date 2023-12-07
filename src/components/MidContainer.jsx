@@ -10,8 +10,19 @@ function MidContainer() {
         <img src="../Setting.png" alt="" />
       </div>
       <div className="PostContainer">
-        <img src="../User.png" alt="" id="UserImg"/>
-        {/* <input type="text" name="" id="inputbox" placeholder="What is happening?!"/> */}
+        <div className="topbar">
+          <img src="../User.png" alt="" id="UserImg" />
+          <input
+            type="text"
+            name=""
+            id="inputbox"
+            placeholder="What is happening?!"
+          />
+        </div>
+        <div className="Input-Popup">
+          <img src="../Earth.png" alt="" />
+          <span>Everyone can reply</span>
+        </div>
       </div>
     </div>
   );

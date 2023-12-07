@@ -1,53 +1,114 @@
-.MidContainer{
-border: 0.5px solid rgb(48, 46, 46);
-width: 37rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Karla:wght@300&family=Oswald:wght@600&family=Poppins:wght@500&display=swap');
+
+
+.MidContainer {
+  border: 0.5px solid rgb(48, 46, 46);
+  width: 37rem;
 }
 
-.header{
-    display: flex;
-    /* background-color: firebrick; */
-    /* padding: 15px; */
-    align-items: center;
+.header {
+  display: flex;
+  /* background-color: firebrick; */
+  /* padding: 15px; */
+  align-items: center;
 }
 
-#foryou{
-    /* background-color:violet; */
-    padding: 17px 105px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
+#foryou {
+  /* background-color:violet; */
+  padding: 17px 105px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-#following{
-    /* background-color: aqua; */
-    padding: 17px 115px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    color: gray
+#following {
+  /* background-color: aqua; */
+  padding: 17px 110px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: gray;
 }
 
-.header img{
-    width: 20px;
-    height: 20px;
-    /* background-color:rebeccapurple; */
-    padding: 10px 10px;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 50%;
+.header img {
+  width: 20px;
+  height: 20px;
+  /* background-color:rebeccapurple; */
+  padding: 5px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-#foryou:hover,#following:hover,.header img:hover{
-    background-color: rgb(25, 25, 25);
+#foryou:hover,
+#following:hover,
+.header img:hover {
+  background-color: rgb(25, 25, 25);
 }
 
-.PostContainer{
-    border: 0.5px solid rgb(48, 46, 46);
-    height: 105px;
-    padding: 10px;
-    background-color: saddlebrown;
+.PostContainer {
+  border: 0.5px solid rgb(48, 46, 46);
+  height: fit-content;
+  padding: 10px;
+  /* background-color: saddlebrown; */
+  display: flex;
+  flex-direction: column;
 }
 
-#UserImg{
-    width: 25px;
+#UserImg {
+  width: 40px;
+  height: 40px;
+  /* background-color: rebeccapurple; */
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.topbar {
+  display: flex;
+}
+
+.topbar input {
+  width: 33vw;
+  margin: auto;
+  padding: 15px 10px 15px 0px;
+  font-size: 20px;
+  /* background-color: palegreen; */
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.topbar input::placeholder {
+  /* background-color: red; */
+  width: 32vw;
+  padding: 0px;
+  margin-left: 10px;
+  color: gray;
+}
+
+.topbar input[type="text"]:focus {
+  outline: none;
+}
+
+.Input-Popup {
+  font-family: 'Poppins', sans-serif;
+  width: fit-content;
+  padding: 5px 20px;
+  cursor: pointer;
+  /* background-color: red; */
+  display: flex;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(2, 180, 239);
+  margin-left: 32px;
+}
+
+.Input-Popup img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
