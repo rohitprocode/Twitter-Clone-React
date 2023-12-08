@@ -23,6 +23,12 @@ function MidContainer() {
           <img src="../Earth.png" alt="" />
           <span>Everyone can reply</span>
         </div>
+        <div className="PostContainer-hr">
+        <hr />
+        </div>
+        <div className="bottom-bar">
+          {/* <img src="../MediaImage.png" alt="" /> */}
+        </div>
       </div>
     </div>
   );

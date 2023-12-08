@@ -94,21 +94,35 @@
 .Input-Popup {
   font-family: 'Poppins', sans-serif;
   width: fit-content;
-  padding: 5px 20px;
+  padding: 5px 10px;
   cursor: pointer;
-  /* background-color: red; */
+  /* background-color: gray; */
   display: flex;
   border-radius: 30px;
   text-align: center;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(2, 180, 239);
-  margin-left: 32px;
+  /* color: black; */
+  margin-left: 45px;
 }
 
 .Input-Popup img {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   margin-right: 5px;
+}
+
+.PostContainer-hr hr{
+  width: 32rem;
+  border: .5px solid rgb(48, 46, 46);
+  margin: 5px 60px 0px 40px;
+  /* outline: none;   */
+}
+
+.bottom-bar{
+  background-color: brown;
+  padding: 20px ;
+  margin-top: 5px;
 }
