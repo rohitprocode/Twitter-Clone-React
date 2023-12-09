@@ -27,7 +27,14 @@ function MidContainer() {
         <hr />
         </div>
         <div className="bottom-bar">
-          {/* <img src="../MediaImage.png" alt="" /> */}
+          <div className="imgContainer">
+          <img id="MediaImg" src="../MediaImage.png" alt="" />
+          <img id="GifImg" src="../GIF.png" alt="" />
+          <img id="PollImg" src="../Poll.png" alt="" />
+          <img id="EmojiImg" src="../Emoji.png" alt="" />
+          <img id="ScheduleImg" src="../Schedule.png" alt="" />
+          <img id="LocationImg" src="../Location.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
