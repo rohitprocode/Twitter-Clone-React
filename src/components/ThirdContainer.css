@@ -1,0 +1,25 @@
+.ThirdContainer{
+    background-color: orange;
+    width: 22.5rem;
+}
+
+.topSearchBar{
+    background-color: saddlebrown;
+    padding: 10px;
+    display: flex;
+    /* border-radius: 30%; */
+}
+
+.topSearchBar img{
+    width: 20px;
+    background-color: white;
+    padding: 5px;
+}
+
+.topSearchBar input {
+    width: 20rem;
+    padding:7px;
+    border: none;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
