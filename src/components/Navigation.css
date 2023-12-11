@@ -27,13 +27,18 @@
     text-align: center;
 }
 
+ul a{
+    text-decoration: none;
+}
+
 ul li{
   /* background-color: blue; */
-  list-style: none;
+  list-style:none;
   font-size: 22px;
   display: flex;
   cursor: pointer;
   font-weight:500;
+  color: white;
 }
 
 #navHome,#navExplore,#navNotification,#navMessages,#navLists,#navCommunities,#navPremium,#navProfile,#navMore{

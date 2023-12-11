@@ -35,6 +35,9 @@ function MidContainer() {
           <img id="ScheduleImg" src="../Schedule.png" alt="" />
           <img id="LocationImg" src="../Location.png" alt="" />
           </div>
+          <div className="postBtnContent">
+            <button>Post</button>
+          </div>
         </div>
       </div>
     </div>

@@ -9,13 +9,15 @@ function Navigation() {
       </div>
       <div className="Nav-contents">
         <ul>
-          <li id="home-li">
-            <div id="navHome">
-              <img src="../Home.png" alt="logo" />
-              {/* <img src="../Blue_Dot.png" alt="" /> */}
-              <span>Home</span>
-            </div>
-          </li>
+          <a href="https://twitter.com/home">
+            <li id="home-li">
+              <div id="navHome">
+                <img src="../Home.png" alt="logo" />
+                {/* <img src="../Blue_Dot.png" alt="" /> */}
+                <span>Home</span>
+              </div>
+            </li>
+          </a>
           <li id="explore-li">
             <div id="navExplore">
               <img src="../Explore.png" alt="logo" />
@@ -78,5 +80,5 @@ function Navigation() {
     </div>
   );
 }
-  
+
 export default Navigation;
