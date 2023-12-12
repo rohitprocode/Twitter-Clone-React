@@ -8,8 +8,8 @@
 
 .twitter-body{
   color: white;
-  width: 80vw;
+  width: 83vw;
   margin:auto auto 0 130px;
   display: flex;
-  /* background-color: gray; */
+  background-color: gray; 
 }
