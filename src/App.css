@@ -3,7 +3,7 @@
 .Container{
   background-color: black;
   font-family: "Karla", sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .twitter-body{

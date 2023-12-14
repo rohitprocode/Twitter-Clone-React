@@ -114,7 +114,7 @@
 
 .Trend-Container{
     /* background-color: rgb(91, 9, 105); */
-    padding: 5px 15px;
+    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -129,11 +129,12 @@
 }
 
 .Trend-Container div{
-    /* padding: 5px; */
-    /* background-color: red; */
+    /* padding: 10px; */
+    height: 10vh;
+    /* background-color: blue; */
 }
 
-.Trend-Container div span{
+.Trend-Container div .top-span{
     font-size: 13.7px;
     color:rgb(113, 118, 123);
     /* background-color: rosybrown; */
@@ -143,10 +144,18 @@
 
 .Trend-Container div h4{
     margin-top: 5px;
+    margin-bottom: 5px;
 }
-
 .Trend-Container img{
     width: 80px;    
     border-radius: 15px;
     
+}
+
+.bottom-span{
+    /* padding: 10px; */
+    /* background-color: red; */
+    color:rgb(113, 118, 123);
+    /* margin:10px; */
+    font-size: 13.7px;
 }
