@@ -101,7 +101,7 @@
 .TrendingBox{
     background-color: rgb(25, 23, 23);
     /* background-color: firebrick; */
-    /* padding: 10px 15px; */
+    /* padding: 0px 0px 10px 0px; */
     border-radius: 15px;
 }
 
@@ -114,18 +114,16 @@
 
 .Trend-Container{
     /* background-color: rgb(91, 9, 105); */
-    padding: 15px 15px;
+    padding: 5px 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.Trend-Container:first-of-type:hover{
+.Trend-Container:hover{
     /* background-color: red; */
     cursor: pointer;
     background-color: rgb(38, 37, 37);
     /* border-radius: 15px; */
-
-
 }
 
 .Trend-Container div{
@@ -146,10 +144,10 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .Trend-Container img{
     width: 80px;    
-    border-radius: 15px;
-    
+    border-radius: 15px;   
 }
 
 .bottom-span{
@@ -158,4 +156,23 @@
     color:rgb(113, 118, 123);
     /* margin:10px; */
     font-size: 13.7px;
+}
+
+/* .Trend-Container:last-of-type */
+
+.Trend-Container:last-of-type{
+    padding: 10px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.showMore{
+    font-weight: 300;
+    color: rgb(0, 166, 255);
+    /* background-color: red; */
+    /* height: 30px; */
+    padding: 30px auto;
+    margin: auto 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

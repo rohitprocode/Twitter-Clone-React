@@ -60,7 +60,9 @@ function ThirdContainer() {
               <span className="bottom-span">7.4K posts </span>
             </div>
           </div>
-          {/* <div className="Trend-Container"></div> */}
+          <div className="Trend-Container">
+            <section className="showMore">Show more</section>
+          </div>
         </div>
         {/* <div className="FollowBox">c</div> */}
       </div>
