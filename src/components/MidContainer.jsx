@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MidContainer.css";
-import ContentBox from "./ContentBox";
+import ContentContainer from "./ContentContainer";
 
 function MidContainer() {
+
+  const [inputField,setInputField] = useState("");
+
+  const [postData,setpostData] = useState([]);
+
+  const inputChange = (event) =>{
+    setInputField(event.target.value)
+  }
+
+  const PostBtnFunc = () =>{
+    setpostData(inputField);
+    setInputField("")
+  }
+
   return (
     <div className="MidContainer">
       <div className="header">
@@ -18,6 +32,8 @@ function MidContainer() {
             name=""
             id="inputbox"
             placeholder="What is happening?!"
+            onChange={inputChange}
+            value={inputField}
           />
         </div>
         <div className="Input-Popup">
@@ -37,12 +53,12 @@ function MidContainer() {
           <img id="LocationImg" src="../Location.png" alt="" />
           </div>
           <div className="postBtnContent">
-            <button>Post</button>
+            <button onClick={PostBtnFunc} >Post</button>
           </div>
         </div>
       </div>
       <div>
-        <ContentBox/>
+        <ContentContainer postData={postData} />
       </div>
     </div>
   );
