@@ -1,6 +1,7 @@
 .ContentContainer{
     /* background-color: rgb(66, 43, 43); */
     padding: 10px;
+    border: .5px solid rgb(48, 46, 46);
 }
 
 .ContentBox{
@@ -15,6 +16,8 @@
   /* background-color: rebeccapurple; */
   border-radius: 50%;
   /* margin: 3px; */
+  cursor: pointer;
+
 }
 
 
@@ -22,9 +25,11 @@
     margin: 2px 10px;
     display: flex;
     gap: 5px;
+    cursor: pointer;
 }
 
 .postUserInfoBox h4{
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -33,11 +38,73 @@
 }
 
 .postContent{
-    margin: 2px 10px;
+    margin: 5px 10px;
+    word-wrap:normal;
+    /* background-color: red; */
+    /* max-width: 30vw; */
+    font-weight: 100;
+    font-size: 15.5px;
 }
 
 .ContentBox section{
-    color: gray;
+    color: rgb(113, 118, 123);
     position:absolute;
     right: 10px;
+    cursor: pointer;
+
 }
+
+.PostAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 97px;
+    margin: 8px 0px 5px 50px;
+    /* background-color: red; */
+    width: fit-content;
+    
+}
+
+.PostAction img{
+    cursor: pointer;
+    width: 18px;
+    /* margin: 0px 5px 0px 0px; */
+    /* padding: 5px 5px; */
+    /* background-color: red; */
+    filter: invert(49%) sepia(7%) saturate(381%) hue-rotate(172deg) brightness(92%) contrast(83%);
+}
+
+.likebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likebtn span{
+    /* font-size: 20px; */
+    font-weight: 600;
+    /* padding: 0px 10px; */
+}
+
+.likebtn:hover{
+    /* background-color: rgb(255, 255, 255); */
+    /* filter: invert(19%) sepia(97%) saturate(4170%) hue-rotate(322deg) brightness(101%) contrast(95%);; */
+    /* background-image: url('D:\Rohit Coding Resources\React Practice\twitter-clone\public\like2.png'); */
+    /* background-image: url('public/like2.png'); */
+    /* color: rebeccapurple; */
+    filter: invert(19%) sepia(97%) saturate(4170%) hue-rotate(322deg) brightness(101%) contrast(95%);
+}
+
+#like2{
+    filter: invert(19%) sepia(97%) saturate(4170%) hue-rotate(322deg) brightness(101%) contrast(95%);
+
+}
+
+#share{
+    margin-left: -80px;
+}
+/* #comment{
+    width: 45px;
+    padding: 0px;
+    border-radius: 25px;
+} */

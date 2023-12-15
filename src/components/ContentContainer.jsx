@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContentContainer.css";
 
 function ContentBox({ postData }) {
+  const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
+  const [like, setlike] = useState(true);
+  const [likeicon, setlikeicon] = useState("like");
+  const [likeCount, setlikeCount] = useState(0);
+  const [likeDisplay, setlikeDisplay] = useState("none");
+
+  const changeLikeIcon = () => {
+    if (like) {
+      setmouseHoverLike("../like2.png");
+      setlikeicon("like2");
+      setlikeDisplay("")
+      setlikeCount(1);
+    } else {
+      setmouseHoverLike("../like.png");
+      setlikeicon("like");
+      setlikeDisplay('none')
+    }
+    setlike(!like);
+
+    // alert("Go")
+  };
+
+  // const againChangeLikeIcon = () => {
+  //   setmouseHoverLike("../like.png");
+  // };
   return (
     <div className="ContentContainer">
       <div className="ContentBox">
@@ -15,6 +40,22 @@ function ContentBox({ postData }) {
           <div className="postContent">{postData}</div>
         </div>
         <section>•••</section>
+      </div>
+      <div className="PostAction">
+        <img src="../Comment.png" alt="" id="comment" />
+        <img src="../repost.png" alt="" id="repost" />
+        <div className="likebtn">
+          <img
+            src={mouseHoverLike}
+            alt=""
+            id={likeicon}
+            onClick={changeLikeIcon}
+          />
+          <span style={{ display:likeDisplay}}>{likeCount}</span>
+        </div>
+        <img src="../view.png" alt="" id="view" />
+        <img src="../bookmark.png" alt="" id="bookmark" />
+        <img src="../share.png" alt="" id="share" />
       </div>
     </div>
   );
