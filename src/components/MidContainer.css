@@ -7,6 +7,7 @@
   border-top: 0px;
   width: 37rem;
   /* background-color: black; */
+  
 }
 
 .header {
@@ -15,7 +16,9 @@
   /* padding: 15px; */
   align-items: center;
   position: sticky;
+  top: 0px;
   /* margin-bottom: 50px; */
+  border-bottom: 0.5px solid rgb(48, 46, 46);;
 }
 
 #foryou {
@@ -58,6 +61,7 @@
   /* background-color: saddlebrown; */
   display: flex;
   flex-direction: column;
+  border-top: none;
 }
 
 #UserImg {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400&family=Oswald:wght@600&family=Poppins:wght@500&display=swap");
 
 .Container{
-  background-color: black;
+  background-color:black;
   font-family: "Karla", sans-serif;
   /* height: 100vh; */
 }
@@ -11,5 +11,5 @@
   width: 83vw;
   margin:auto auto 0 130px;
   display: flex;
-  /* background-color: gray;  */
+  background-color: black; 
 }

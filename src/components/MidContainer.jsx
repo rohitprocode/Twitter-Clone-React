@@ -1,5 +1,6 @@
 import React from "react";
 import "./MidContainer.css";
+import ContentBox from "./ContentBox";
 
 function MidContainer() {
   return (
@@ -39,6 +40,9 @@ function MidContainer() {
             <button>Post</button>
           </div>
         </div>
+      </div>
+      <div>
+        <ContentBox/>
       </div>
     </div>
   );
