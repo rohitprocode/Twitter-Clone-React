@@ -31,7 +31,7 @@ function ThirdContainer() {
           <div className="Trend-Container">
             <div>
               <span className="top-span">Politics · Trending</span>
-              <span className="threeDots">···</span>
+              <span className="threeDots">•••</span>
               <h4>Terrorists</h4>
               <span className="bottom-span">213K posts</span>
             </div>
@@ -39,7 +39,7 @@ function ThirdContainer() {
           <div className="Trend-Container">
             <div>
               <span className="top-span">News · Trending</span>
-              <span className="threeDots">···</span>
+              <span className="threeDots">•••</span>
               <h4>#BreakingNews</h4>
               <span className="bottom-span">14.9K posts</span>
             </div>
@@ -47,7 +47,7 @@ function ThirdContainer() {
           <div className="Trend-Container">
             <div>
               <span className="top-span">Business & finance · Trending</span>
-              <span className="threeDots">···</span>
+              <span className="threeDots">•••</span>
               <h4>#StockMarketindia</h4>
               <span className="bottom-span">10.9K posts</span>
             </div>
@@ -55,14 +55,15 @@ function ThirdContainer() {
           <div className="Trend-Container">
             <div>
               <span className="top-span">Sports · Trending</span>
-              <span className="threeDots">···</span>
+              <span className="threeDots">•••</span>
               <h4>Rohit Sharma</h4>
               <span className="bottom-span">7.4K posts </span>
             </div>
           </div>
-          <div className="Trend-Container">
+          <a href="https://twitter.com/explore/tabs/for-you"><div className="Trend-Container">
             <section className="showMore">Show more</section>
           </div>
+          </a>
         </div>
         {/* <div className="FollowBox">c</div> */}
       </div>

@@ -105,6 +105,10 @@
     border-radius: 15px;
 }
 
+.TrendingBox a{
+    text-decoration: none;
+}
+
 .TrendingBox h1{
     margin-bottom: 10px;
     font-size: 21px;
@@ -117,6 +121,7 @@
     padding: 5px 15px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .Trend-Container:hover{
@@ -148,6 +153,12 @@
 .Trend-Container img{
     width: 80px;    
     border-radius: 15px;   
+}
+
+.threeDots{
+    position: absolute;
+    right: 10px;
+    color: rgb(113, 118, 123);
 }
 
 .bottom-span{

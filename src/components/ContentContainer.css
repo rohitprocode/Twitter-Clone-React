@@ -1,6 +1,6 @@
 .ContentContainer{
     /* background-color: rgb(66, 43, 43); */
-    padding: 10px;
+    padding: 10px 10px 0px 10px ;
     border: .5px solid rgb(48, 46, 46);
 }
 
@@ -58,10 +58,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 97px;
+    gap: 70px;
     margin: 8px 0px 5px 50px;
     /* background-color: red; */
-    width: fit-content;
+    max-width: 34vw;
     
 }
 
@@ -69,9 +69,11 @@
     cursor: pointer;
     width: 18px;
     /* margin: 0px 5px 0px 0px; */
-    /* padding: 5px 5px; */
-    /* background-color: red; */
+    padding: 10px 10px;
+    /* background-color: rebeccapurple; */
     filter: invert(49%) sepia(7%) saturate(381%) hue-rotate(172deg) brightness(92%) contrast(83%);
+    /* background-color: green; */
+    border-radius: 15px;
 }
 
 .likebtn{
@@ -83,7 +85,7 @@
 .likebtn span{
     /* font-size: 20px; */
     font-weight: 600;
-    /* padding: 0px 10px; */
+    margin: 0px 10px;
 }
 
 .likebtn:hover{
@@ -93,6 +95,8 @@
     /* background-image: url('public/like2.png'); */
     /* color: rebeccapurple; */
     filter: invert(19%) sepia(97%) saturate(4170%) hue-rotate(322deg) brightness(101%) contrast(95%);
+    background-color:rgba(249, 24, 128, 0.1);
+    border-radius: 50px;
 }
 
 #like2{

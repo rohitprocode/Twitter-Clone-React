@@ -51,7 +51,7 @@ function ContentBox({ postData }) {
             id={likeicon}
             onClick={changeLikeIcon}
           />
-          <span style={{ display:likeDisplay}}>{likeCount}</span>
+          <span style={{ display:likeDisplay}}>{likeCount}</span> 
         </div>
         <img src="../view.png" alt="" id="view" />
         <img src="../bookmark.png" alt="" id="bookmark" />
