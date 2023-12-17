@@ -1,7 +1,10 @@
 import React from "react";
 import "./Navigation.css";
+import NavItem from "./NavItem";
+import NavListName from "./NavList";
 
 function Navigation() {
+  console.log(NavListName);
   return (
     <div className="nav">
       <div className="logo">
@@ -9,15 +12,15 @@ function Navigation() {
       </div>
       <div className="Nav-contents">
         <ul>
-          <a href="https://twitter.com/home">
-            <li id="home-li">
-              <div id="navHome">
-                <img src="../Home.png" alt="logo" />
-                {/* <img src="../Blue_Dot.png" alt="" /> */}
-                <span>Home</span>
-              </div>
-            </li>
-          </a>
+          {/* {NavListName.map((it) => (
+            <NavItem key={it.id} name={it.name} />
+          ))} */}
+
+           {NavListName.map((navlist)=>
+          <NavItem key={navlist.id} name={navlist.name} img={navlist.img} link={navlist.alink} divId={navlist.divId} liId={navlist.liId}/>
+         )}
+
+          {/* { 
           <li id="explore-li">
             <div id="navExplore">
               <img src="../Explore.png" alt="logo" />
@@ -65,7 +68,7 @@ function Navigation() {
               <img src="../More.png" alt="logo" />
               <span>More</span>
             </div>
-          </li>
+          </li>  */}
         </ul>
         <button id="Post-btn">Post</button>
       </div>
