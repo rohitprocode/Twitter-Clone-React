@@ -1,16 +1,23 @@
 .ThirdContainer{
-    /* background-color: orange; */
+    background-color: orange;
     width: 25.3rem;
+    position: absolute;     
+    right: 0px;
+    height: 165vh;
 }
 
 .topSearchBar{
-    /* background-color: saddlebrown; */
+    background-color:black;
     padding: 5px;
     display: flex;
     /* height: 45px; */
     justify-content: center;
     /* align-items: center; */
     /* border-radius: 30%; */
+    position: sticky;
+    top: 0px;
+    /* overflow: auto; */
+    z-index: 1;
 }
 
 .imgContent{
