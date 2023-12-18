@@ -1,5 +1,5 @@
 .ThirdContainer{
-    background-color: orange;
+    /* background-color: orange; */
     width: 25.3rem;
     position: absolute;     
     right: 0px;
@@ -193,4 +193,30 @@
     margin: auto 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.FollowContainer{
+    border-radius: 15px;
+    /* background-color: red; */
+    background-color: rgb(25, 23, 23);
+    border-radius: 15px;
+
+}
+
+.FollowContainer h1{
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 900;
+    padding: 10px 15px 5px 15px;
+}
+
+.FollowContainer section{
+    padding: 10px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+.FollowContainer section:hover{
+    background-color: rgb(38, 37, 37);
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import "./ThirdContainer.css";
+import FollowBox from "./FollowBox";
+import FollowBoxList from "./FollowBoxList";
 
 function ThirdContainer() {
   return (
@@ -60,12 +62,19 @@ function ThirdContainer() {
               <span className="bottom-span">7.4K posts </span>
             </div>
           </div>
-          <a href="https://twitter.com/explore/tabs/for-you"><div className="Trend-Container">
-            <section className="showMore">Show more</section>
-          </div>
+          <a href="https://twitter.com/explore/tabs/for-you">
+            <div className="Trend-Container">
+              <section className="showMore">Show more</section>
+            </div>
           </a>
         </div>
-        {/* <div className="FollowBox">c</div> */}
+        <div className="FollowContainer">
+          <h1>Who to follow</h1>
+          {FollowBoxList.map((data=>
+          <FollowBox img={data.img} name={data.name} username={data.userName}/>
+          ))}
+          <section className="showMore">Show more</section>
+        </div>
       </div>
     </div>
   );
