@@ -1,6 +1,7 @@
 .followBox {
   /* background-color: rebeccapurple; */
   padding: 0px 10px;
+  /* position: fixed; */
 }
 
 .followBox div {
@@ -40,8 +41,8 @@
   /* background-color: blue; */
 /* } */
 
-.followBox div span {
-  font-size: 13.7px;
+.userId-data span {
+  /* font-size: 13.7px; */
   color: rgb(113, 118, 123);
   /* background-color: rosybrown; */
   /* padding: 0px 0px; */
@@ -61,4 +62,8 @@
   border-radius: 20px;
   font-size: 15px;
   cursor: pointer;
+}
+
+.followBtn:hover{
+    background-color: rgb(226, 230, 232);
 }

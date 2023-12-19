@@ -70,11 +70,24 @@ function ThirdContainer() {
         </div>
         <div className="FollowContainer">
           <h1>Who to follow</h1>
-          {FollowBoxList.map((data=>
-          <FollowBox img={data.img} name={data.name} username={data.userName}/>
+          {FollowBoxList.map((data) => (
+            <FollowBox
+              img={data.img}
+              name={data.name}
+              username={data.userName}
+            />
           ))}
           <section className="showMore">Show more</section>
         </div>
+      </div>
+      <div className="thirdC-bottomBar">
+        <span>Terms of Service </span>
+        <span>Privacy Policy </span>
+        <span>Cookie Policy </span>
+        <span>Accessibility </span>
+        <span>Ads info </span>
+        <span>More... </span>
+        <span>© 2023 X Corp.</span>
       </div>
     </div>
   );

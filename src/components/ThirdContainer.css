@@ -1,9 +1,13 @@
 .ThirdContainer{
-    /* background-color: orange; */
+    /* background-color: red; */
     width: 25.3rem;
     position: absolute;     
     right: 0px;
-    height: 165vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    
 }
 
 .topSearchBar{
@@ -200,6 +204,7 @@
     /* background-color: red; */
     background-color: rgb(25, 23, 23);
     border-radius: 15px;
+    /* position: fixed; */
 
 }
 
@@ -219,4 +224,16 @@
 
 .FollowContainer section:hover{
     background-color: rgb(38, 37, 37);
+}
+
+.thirdC-bottomBar{
+    /* background-color: blue; */
+    padding: 10px 40px;
+    color:rgb(113, 118, 123);
+
+}
+
+.thirdC-bottomBar span{
+    font-size: 13.7px;
+    margin: 0px 5px;
 }
