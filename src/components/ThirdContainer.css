@@ -236,4 +236,5 @@
 .thirdC-bottomBar span{
     font-size: 13.7px;
     margin: 0px 5px;
+    cursor: pointer;;
 }
