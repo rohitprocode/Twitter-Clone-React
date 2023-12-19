@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MidContainer.css";
 import ContentContainer from "./ContentContainer";
 
 function MidContainer() {
+  const [inputField, setInputField] = useState("");
 
-  const [inputField,setInputField] = useState("");
+  const [InitialOutput, setInitialOutput] = useState([]);
 
-  const [postData,setpostData] = useState([]);
+  const inputChange = (event) => {
+    setInputField(event.target.value);
+  };  
 
-  const inputChange = (event) =>{
-    setInputField(event.target.value)
-  }
-
-  const PostBtnFunc = () =>{
-    setpostData(inputField);
-    setInputField("")
-  }
+  const PostBtnFunc = () => {
+    setInputField("");
+    setInitialOutput([...InitialOutput, inputField])
+    console.log(InitialOutput)
+    }
 
   return (
     <div className="MidContainer">
@@ -41,24 +41,26 @@ function MidContainer() {
           <span>Everyone can reply</span>
         </div>
         <div className="PostContainer-hr">
-        <hr />
+          <hr />
         </div>
         <div className="bottom-bar">
           <div className="imgContainer">
-          <img id="MediaImg" src="../MediaImage.png" alt="" />
-          <img id="GifImg" src="../GIF.png" alt="" />
-          <img id="PollImg" src="../Poll.png" alt="" />
-          <img id="EmojiImg" src="../Emoji.png" alt="" />
-          <img id="ScheduleImg" src="../Schedule.png" alt="" />
-          <img id="LocationImg" src="../Location.png" alt="" />
+            <img id="MediaImg" src="../MediaImage.png" alt="" />
+            <img id="GifImg" src="../GIF.png" alt="" />
+            <img id="PollImg" src="../Poll.png" alt="" />
+            <img id="EmojiImg" src="../Emoji.png" alt="" />
+            <img id="ScheduleImg" src="../Schedule.png" alt="" />
+            <img id="LocationImg" src="../Location.png" alt="" />
           </div>
           <div className="postBtnContent">
-            <button onClick={PostBtnFunc} >Post</button>
+            <button onClick={PostBtnFunc}>Post</button>
           </div>
         </div>
       </div>
-      <div>
-        <ContentContainer postData={postData} />
+      <div className="contentPublish">
+        {InitialOutput.map((data=>
+          <ContentContainer postData={data}/>
+          ))}
       </div>
     </div>
   );

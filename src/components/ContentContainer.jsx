@@ -7,6 +7,7 @@ function ContentBox({ postData }) {
   const [likeicon, setlikeicon] = useState("like");
   const [likeCount, setlikeCount] = useState(0);
   const [likeDisplay, setlikeDisplay] = useState("none");
+  
 
   const changeLikeIcon = () => {
     if (like) {
@@ -35,7 +36,7 @@ function ContentBox({ postData }) {
           <div className="postUserInfoBox">
             <h4>Rohit Rathore</h4>
             <span>@rohitprocode</span> <span>•</span>
-            <span>10m</span>
+            <span>1s</span>
           </div>
           <div className="postContent">{postData}</div>
         </div>
