@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 import NavItem from "./NavItem";
-import NavListName from "./NavList";
+import NavListName from "./NavList.json";
 
 function Navigation() {
   console.log(NavListName);
@@ -12,7 +12,7 @@ function Navigation() {
       </div>
       <div className="Nav-contents">
         <ul>
-          {NavListName.map((navlist) => (
+          {NavListName.items.map((navlist) => (
             <NavItem
               key={navlist.id}
               name={navlist.name}
