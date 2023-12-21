@@ -2,6 +2,8 @@ import React from "react";
 import "./ThirdContainer.css";
 import FollowBox from "./FollowBox";
 import FollowBoxList from "./FollowBoxList";
+import TrendingList from "./TrendingList.json";
+import TrendContainer from "./TrendContainer";
 
 function ThirdContainer() {
   return (
@@ -23,45 +25,14 @@ function ThirdContainer() {
         </div>
         <div className="TrendingBox">
           <h1>What's happening</h1>
-          <div className="Trend-Container">
-            <div>
-              <span className="top-span">JioCinema · December 11, 2023</span>
-              <h4>TATA IPL 2024</h4>
-            </div>
-            <img src="../IPL.jpg" alt="" />
-          </div>
-          <div className="Trend-Container">
-            <div>
-              <span className="top-span">Politics · Trending</span>
-              <span className="threeDots">•••</span>
-              <h4>Terrorists</h4>
-              <span className="bottom-span">213K posts</span>
-            </div>
-          </div>
-          <div className="Trend-Container">
-            <div>
-              <span className="top-span">News · Trending</span>
-              <span className="threeDots">•••</span>
-              <h4>#BreakingNews</h4>
-              <span className="bottom-span">14.9K posts</span>
-            </div>
-          </div>
-          <div className="Trend-Container">
-            <div>
-              <span className="top-span">Business & finance · Trending</span>
-              <span className="threeDots">•••</span>
-              <h4>#StockMarketindia</h4>
-              <span className="bottom-span">10.9K posts</span>
-            </div>
-          </div>
-          <div className="Trend-Container">
-            <div>
-              <span className="top-span">Sports · Trending</span>
-              <span className="threeDots">•••</span>
-              <h4>Rohit Sharma</h4>
-              <span className="bottom-span">7.4K posts </span>
-            </div>
-          </div>
+          {TrendingList.items.map((data) => (
+            <TrendContainer
+              category={data.category}
+              heading={data.heading}
+              postCounts={data.postCounts}
+            />
+          ))}
+
           <a href="https://twitter.com/explore/tabs/for-you">
             <div className="Trend-Container">
               <section className="showMore">Show more</section>
@@ -75,6 +46,7 @@ function ThirdContainer() {
               img={data.img}
               name={data.name}
               username={data.userName}
+              key={data.key}
             />
           ))}
           <section className="showMore">Show more</section>

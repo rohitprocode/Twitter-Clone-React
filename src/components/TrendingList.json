@@ -1,0 +1,29 @@
+{
+    "items" : [
+        {
+            "category":"Sports · Trending",
+            "heading":"Rohit Sharma",
+            "postCounts":"1M"
+        },
+        {
+            "category":"Politics · Trending",
+            "heading":"Terrorists",
+            "postCounts":"213K posts"
+        },
+        {
+            "category":"News · Trending",
+            "heading":"#BreakingNews",
+            "postCounts":"14.9K posts"
+        },
+        {
+            "category":"Business & finance · Trending",
+            "heading":"#StockMarketindia",
+            "postCounts":"10.9K posts"
+        },
+        {
+            "category":"JioCinema · December 11, 2023",
+            "heading":"TATA IPL 2024",
+            "postCounts":"7.4K posts"
+        }
+    ]
+}

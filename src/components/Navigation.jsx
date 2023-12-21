@@ -4,7 +4,6 @@ import NavItem from "./NavItem";
 import NavListName from "./NavList.json";
 
 function Navigation() {
-  console.log(NavListName);
   return (
     <div className="nav">
       <div className="logo">

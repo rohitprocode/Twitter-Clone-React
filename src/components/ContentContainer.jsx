@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContentContainer.css";
 
-function ContentBox({ postData }) {
+function ContentBox({ postData}) {
   const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
   const [like, setlike] = useState(true);
   const [likeicon, setlikeicon] = useState("like");
@@ -21,13 +21,11 @@ function ContentBox({ postData }) {
       setlikeDisplay('none')
     }
     setlike(!like);
-
-    // alert("Go")
   };
 
-  // const againChangeLikeIcon = () => {
-  //   setmouseHoverLike("../like.png");
-  // };
+  const deleteFunction = (e) =>{
+
+  }
   return (
     <div className="ContentContainer">
       <div className="ContentBox">
@@ -40,8 +38,8 @@ function ContentBox({ postData }) {
           </div>
           <div className="postContent">{postData}</div>
         </div>
-        <section>•••</section>
-      </div>
+        <section onClick={deleteFunction} >•••</section>
+     </div>
       <div className="PostAction">
         <img src="../Comment.png" alt="" id="comment" />
         <img src="../repost.png" alt="" id="repost" />

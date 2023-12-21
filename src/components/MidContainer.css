@@ -157,11 +157,15 @@
 }
 
 .imageUpload{
-  
+  margin: 0px 5px;
   background-image: url('/public/MediaImage.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
+}
+
+.imageUpload:hover{
+  background-color:rgb(27, 27, 36);
 }
 
 #MediaImg{

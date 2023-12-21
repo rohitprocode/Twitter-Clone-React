@@ -9,13 +9,15 @@ function MidContainer() {
 
   const inputChange = (event) => {
     setInputField(event.target.value);
-  };  
+  };
+
+  
 
   const PostBtnFunc = () => {
     setInputField("");
-    setInitialOutput([...InitialOutput, inputField])
-    console.log(InitialOutput)
-    }
+    setInitialOutput([...InitialOutput, inputField]);
+    console.log(InitialOutput);
+  };
 
   return (
     <div className="MidContainer">
@@ -46,9 +48,8 @@ function MidContainer() {
         <div className="bottom-bar">
           <div className="imgContainer">
             <div className="imageUpload">
-           <input type="file" id="MediaImg" />
-           </div>
-           {/* <img id="MediaImg" src="../MediaImage.png" alt=""  /> */}
+              <input type="file" id="MediaImg" />
+            </div>
             <img id="GifImg" src="../GIF.png" alt="" />
             <img id="PollImg" src="../Poll.png" alt="" />
             <img id="EmojiImg" src="../Emoji.png" alt="" />
@@ -61,9 +62,9 @@ function MidContainer() {
         </div>
       </div>
       <div className="contentPublish">
-        {InitialOutput.map((data=>
+        {InitialOutput.map((data) => (
           <ContentContainer postData={data}/>
-          ))}
+        ))}
       </div>
     </div>
   );
