@@ -2,7 +2,7 @@ import React from "react";
 import "./ThirdContainer.css";
 import FollowBox from "./FollowBox";
 import FollowBoxList from "./FollowBoxList";
-import TrendingList from "./TrendingList.json";
+import TrendingList from "../ThirdContainer/TrendingList.json";
 import TrendContainer from "./TrendContainer";
 
 function ThirdContainer() {

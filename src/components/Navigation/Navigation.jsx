@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 import NavItem from "./NavItem";
-import NavListName from "./NavList.json";
+import NavListName from "../Navigation/NavList.json";
 
 function Navigation() {
   return (
