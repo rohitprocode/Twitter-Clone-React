@@ -11,12 +11,9 @@ function MidContainer() {
     setInputField(event.target.value);
   };
 
-  
-
   const PostBtnFunc = () => {
     setInputField("");
-    setInitialOutput([...InitialOutput, inputField]);
-    console.log(InitialOutput);
+    setInitialOutput([...InitialOutput,inputField]);
   };
 
   return (
@@ -63,7 +60,7 @@ function MidContainer() {
       </div>
       <div className="contentPublish">
         {InitialOutput.map((data) => (
-          <ContentContainer postData={data}/>
+          <ContentContainer postData={data} />
         ))}
       </div>
     </div>

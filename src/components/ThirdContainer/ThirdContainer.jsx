@@ -30,6 +30,7 @@ function ThirdContainer() {
               category={data.category}
               heading={data.heading}
               postCounts={data.postCounts}
+              key={data.key}
             />
           ))}
 

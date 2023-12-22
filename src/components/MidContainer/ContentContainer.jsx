@@ -22,10 +22,6 @@ function ContentBox({ postData}) {
     }
     setlike(!like);
   };
-
-  const deleteFunction = (e) =>{
-
-  }
   return (
     <div className="ContentContainer">
       <div className="ContentBox">
@@ -38,7 +34,7 @@ function ContentBox({ postData}) {
           </div>
           <div className="postContent">{postData}</div>
         </div>
-        <section onClick={deleteFunction} >•••</section>
+        <section>X</section>
      </div>
       <div className="PostAction">
         <img src="../Comment.png" alt="" id="comment" />

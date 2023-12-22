@@ -3,27 +3,32 @@
         {
             "category":"Sports · Trending",
             "heading":"Rohit Sharma",
-            "postCounts":"1M"
+            "postCounts":"1M",
+            "key":1
         },
         {
             "category":"Politics · Trending",
             "heading":"Terrorists",
-            "postCounts":"213K posts"
+            "postCounts":"213K posts",
+            "key":2
         },
         {
             "category":"News · Trending",
             "heading":"#BreakingNews",
-            "postCounts":"14.9K posts"
+            "postCounts":"14.9K posts",
+            "key":3
         },
         {
             "category":"Business & finance · Trending",
             "heading":"#StockMarketindia",
-            "postCounts":"10.9K posts"
+            "postCounts":"10.9K posts",
+            "key":4
         },
         {
             "category":"JioCinema · December 11, 2023",
             "heading":"TATA IPL 2024",
-            "postCounts":"7.4K posts"
+            "postCounts":"7.4K posts",
+            "key":5
         }
     ]
 }
