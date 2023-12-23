@@ -7,6 +7,7 @@ function ContentBox({ postData, id, onSelect }) {
   const [likeicon, setlikeicon] = useState("like");
   const [likeCount, setlikeCount] = useState(0);
   const [likeDisplay, setlikeDisplay] = useState("none");
+  const [displayPostOption, setdisplayPostOption] = useState("none");
 
   const changeLikeIcon = () => {
     if (like) {
@@ -22,8 +23,17 @@ function ContentBox({ postData, id, onSelect }) {
     setlike(!like);
   };
 
+  const displayPostOptionFunction = () => {
+    setdisplayPostOption("block");
+  };
+
+  const displayPostOptionFunctionClose = () => {
+    setdisplayPostOption("none");
+  };
+
   const deleteFunction = () => {
     onSelect(id);
+    setdisplayPostOption("none");
   };
 
   return (
@@ -38,13 +48,17 @@ function ContentBox({ postData, id, onSelect }) {
           </div>
           <div className="postContent">{postData}</div>
         </div>
-        {/* <section onClick={deleteFunction}>X</section> */}
-        <section>•••</section>
-        <div className="popup-msg">
-          <div className="overlay">
-            <div className="popupMsgContentBox">
-              <button>X</button>
-              <p>popupMsgContentBox</p>
+        {/* <section >X</section> */}
+        <section onClick={displayPostOptionFunction}>•••</section>
+        <div className="popup-msg" style={{ display: displayPostOption }}>
+          <div className="overlay"></div>
+          <div className="popupMsgContentBox">
+            <button onClick={displayPostOptionFunctionClose}>X</button>
+            <div className="Action">
+              <h4 id="EditAction">Edit</h4>
+              <h4 id="DeleteAction" onClick={deleteFunction}>
+                Delete
+              </h4>
             </div>
           </div>
         </div>
