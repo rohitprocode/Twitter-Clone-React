@@ -90,6 +90,7 @@
   background-color: black;
   border: none;
   color: white;
+  word-wrap: normal;
 }
 
 .topbar input::placeholder {

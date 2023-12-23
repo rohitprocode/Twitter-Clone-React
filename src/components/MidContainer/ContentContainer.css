@@ -7,7 +7,7 @@
 .ContentBox{
     display: flex;
     position: relative;
-    
+    /* background-color: pink; */
 }
 
 .ContentBox img{
@@ -39,9 +39,7 @@
 
 .postContent{
     margin: 5px 10px;
-    word-wrap:normal;
     /* background-color: red; */
-    /* max-width: 30vw; */
     font-weight: 100;
     font-size: 15.5px;
 }
@@ -49,9 +47,15 @@
 .ContentBox section{
     color: rgb(113, 118, 123);
     position:absolute;
-    right: 10px;
+    right: 0px;
     cursor: pointer;
+    padding: 2.5px 5px;
+}
 
+.ContentBox section:hover{
+    color: rgb(255, 0, 51);
+    background-color: rgb(17, 38, 92);
+    border-radius: 50%
 }
 
 .PostAction{
@@ -112,3 +116,27 @@
     padding: 0px;
     border-radius: 25px;
 } */
+
+/* Popup Msg  */
+
+.overlay{
+    background-color: rgb(130, 124, 124);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.popupMsgContentBox{
+    background-color: white;
+    color: black;
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    box-sizing: border-box;
+}

@@ -76,3 +76,4 @@ function MidContainer() {
 }
 
 export default MidContainer;
+
