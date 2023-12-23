@@ -13,8 +13,16 @@ function MidContainer() {
 
   const PostBtnFunc = () => {
     setInputField("");
-    setInitialOutput([...InitialOutput,inputField]);
+    setInitialOutput([...InitialOutput, inputField]);
   };
+
+  const deleteSelectedFunction = (id) =>{
+    setInitialOutput((oldData)=>{
+      return oldData.filter((arrElement,index)=>{
+        return index != id;
+      })
+    })
+  }
 
   return (
     <div className="MidContainer">
@@ -59,8 +67,8 @@ function MidContainer() {
         </div>
       </div>
       <div className="contentPublish">
-        {InitialOutput.map((data) => (
-          <ContentContainer postData={data} />
+        {InitialOutput.map((data, index) => (
+          <ContentContainer postData={data} id={index} onSelect={deleteSelectedFunction} />
         ))}
       </div>
     </div>

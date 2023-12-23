@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContentContainer.css";
 
-function ContentBox({ postData}) {
+function ContentBox({ postData,id,onSelect}) {
   const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
   const [like, setlike] = useState(true);
   const [likeicon, setlikeicon] = useState("like");
@@ -22,6 +22,11 @@ function ContentBox({ postData}) {
     }
     setlike(!like);
   };
+
+  const deleteFunction = () => {
+    onSelect(id)
+  }
+
   return (
     <div className="ContentContainer">
       <div className="ContentBox">
@@ -34,7 +39,7 @@ function ContentBox({ postData}) {
           </div>
           <div className="postContent">{postData}</div>
         </div>
-        <section>X</section>
+        <section onClick={deleteFunction} >X</section>
      </div>
       <div className="PostAction">
         <img src="../Comment.png" alt="" id="comment" />
