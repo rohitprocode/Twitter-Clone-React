@@ -3,26 +3,34 @@ import "./MidContainer.css";
 import ContentContainer from "./ContentContainer";
 
 function MidContainer() {
-  const [inputField, setInputField] = useState("");
+  const [inputField, setInputField] = useState(null);
 
   const [InitialOutput, setInitialOutput] = useState([]);
+
+  const [postAction, setPostAction] = useState(null);
 
   const inputChange = (event) => {
     setInputField(event.target.value);
   };
 
   const PostBtnFunc = () => {
-    setInputField("");
-    setInitialOutput([...InitialOutput, inputField]);
+    if (inputField) {
+      setInputField("");
+      setInitialOutput([...InitialOutput, inputField]);
+    }
   };
 
-  const deleteSelectedFunction = (id) =>{
-    setInitialOutput((oldData)=>{
-      return oldData.filter((arrElement,index)=>{
+  const deleteSelectedFunction = (id) => {
+    setInitialOutput((oldData) => {
+      return oldData.filter((arrElement, index) => {
         return index != id;
-      })
-    })
-  }
+      });
+    });
+  };
+
+  const editSelectedFunction = (id) => {
+    console.log(InitialOutput);
+  };
 
   return (
     <div className="MidContainer">
@@ -62,13 +70,20 @@ function MidContainer() {
             <img id="LocationImg" src="../Location.png" alt="" />
           </div>
           <div className="postBtnContent">
-            <button onClick={PostBtnFunc}>Post</button>
+            <button onClick={PostBtnFunc}>
+              {postAction ? "Edit" : "Post"}
+            </button>
           </div>
         </div>
       </div>
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
-          <ContentContainer postData={data} id={index} onSelect={deleteSelectedFunction} />
+          <ContentContainer
+            postData={data}
+            id={index}
+            onDeleteSelect={deleteSelectedFunction}
+            onEditSelect={editSelectedFunction}
+          />
         ))}
       </div>
     </div>
@@ -76,4 +91,3 @@ function MidContainer() {
 }
 
 export default MidContainer;
-
