@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./MidContainer.css";
 import ContentContainer from "./ContentContainer";
 import PublishContainer from "./PublishContainer";
-import { logDOM } from "@testing-library/react";
 
 function MidContainer() {
   // const [InitialOutput, setInitialOutput] = useState([]);
 
-  // const [postAction, setPostAction] = useState(null);
-
+  
   const [inputField, setInputField] = useState("");
-
+  
   const [InitialOutput, setInitialOutput] = useState([]);
+  
+  const [postAction, setPostAction] = useState("Post");
 
   const deleteSelectedFunction = (id) => {
     setInitialOutput((oldData) => {
@@ -24,6 +24,7 @@ function MidContainer() {
   const editSelectedFunction = (id) => {
     // setInputField(InitialOutput.find(editzz => editzz.id === id))
     setInputField(InitialOutput[id])
+    setPostAction("Edit")
   };
 
   return (
@@ -33,7 +34,7 @@ function MidContainer() {
       setInputField={setInputField}
       InitialOutput={InitialOutput}
       setInitialOutput={setInitialOutput}
-      // postAction={postAction} 
+      postAction={postAction} 
       />
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
