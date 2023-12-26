@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
+function PublishContainer({
+  inputField,
+  setInputField,
+  InitialOutput,
+  setInitialOutput,
+  postAction,
+}) {
+  const inputChange = (event) => {
+    setInputField(event.target.value);
+  };
 
-function PublishContainer({inputField,setInputField,InitialOutput,setInitialOutput,postAction}) {
-
-
-    const inputChange = (event) => {
-        setInputField(event.target.value);
-      };
-
-    const PostBtnFunc = () => {
-        if (inputField) {
-          setInputField("");
-          setInitialOutput([...InitialOutput, inputField]);
-        }
-      };
+  const PostEditBtnFunc = () => {
+    if (postAction == "Post") {
+      if (inputField) {
+        setInputField("");
+        setInitialOutput([...InitialOutput, inputField]);
+      }
+    }
+  };
 
   return (
     <div>
@@ -53,14 +58,12 @@ function PublishContainer({inputField,setInputField,InitialOutput,setInitialOutp
             <img id="LocationImg" src="../Location.png" alt="" />
           </div>
           <div className="postBtnContent">
-            <button onClick={PostBtnFunc}>
-              {postAction ? "Edit" : "Post"}
-            </button>
+            <button onClick={PostEditBtnFunc}>{postAction}</button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default PublishContainer
+export default PublishContainer;
