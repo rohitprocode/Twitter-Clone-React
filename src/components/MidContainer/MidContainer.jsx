@@ -1,86 +1,46 @@
 import React, { useEffect, useState } from "react";
 import "./MidContainer.css";
 import ContentContainer from "./ContentContainer";
+import PublishContainer from "./PublishContainer";
+import { logDOM } from "@testing-library/react";
 
 function MidContainer() {
-  const [inputField, setInputField] = useState(null);
+  // const [InitialOutput, setInitialOutput] = useState([]);
+
+  // const [postAction, setPostAction] = useState(null);
+
+  const [inputField, setInputField] = useState("");
 
   const [InitialOutput, setInitialOutput] = useState([]);
-
-  const [postAction, setPostAction] = useState(null);
-
-  const inputChange = (event) => {
-    setInputField(event.target.value);
-  };
-
-  const PostBtnFunc = () => {
-    if (inputField) {
-      setInputField("");
-      setInitialOutput([...InitialOutput, inputField]);
-    }
-  };
 
   const deleteSelectedFunction = (id) => {
     setInitialOutput((oldData) => {
       return oldData.filter((arrElement, index) => {
-        return index != id;
+        return index !== id;
       });
     });
   };
 
   const editSelectedFunction = (id) => {
-    console.log(InitialOutput);
+    // setInputField(InitialOutput.find(editzz => editzz.id === id))
+    setInputField(InitialOutput[id])
   };
 
   return (
     <div className="MidContainer">
-      <div className="header">
-        <h3 id="foryou">For you</h3>
-        <h3 id="following">Following</h3>
-        <img src="../Setting.png" alt="" />
-      </div>
-      <div className="PostContainer">
-        <div className="topbar">
-          <img src="../User.png" alt="" id="UserImg" />
-          <input
-            type="text"
-            name=""
-            id="inputbox"
-            placeholder="What is happening?!"
-            onChange={inputChange}
-            value={inputField}
-          />
-        </div>
-        <div className="Input-Popup">
-          <img src="../Earth.png" alt="" />
-          <span>Everyone can reply</span>
-        </div>
-        <div className="PostContainer-hr">
-          <hr />
-        </div>
-        <div className="bottom-bar">
-          <div className="imgContainer">
-            <div className="imageUpload">
-              <input type="file" id="MediaImg" />
-            </div>
-            <img id="GifImg" src="../GIF.png" alt="" />
-            <img id="PollImg" src="../Poll.png" alt="" />
-            <img id="EmojiImg" src="../Emoji.png" alt="" />
-            <img id="ScheduleImg" src="../Schedule.png" alt="" />
-            <img id="LocationImg" src="../Location.png" alt="" />
-          </div>
-          <div className="postBtnContent">
-            <button onClick={PostBtnFunc}>
-              {postAction ? "Edit" : "Post"}
-            </button>
-          </div>
-        </div>
-      </div>
+      <PublishContainer 
+      inputField={inputField}
+      setInputField={setInputField}
+      InitialOutput={InitialOutput}
+      setInitialOutput={setInitialOutput}
+      // postAction={postAction} 
+      />
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
           <ContentContainer
             postData={data}
             id={index}
+            key={index}
             onDeleteSelect={deleteSelectedFunction}
             onEditSelect={editSelectedFunction}
           />

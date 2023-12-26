@@ -53,7 +53,6 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect }) {
           </div>
           <div className="postContent">{postData}</div>
         </div>
-        {/* <section >X</section> */}
         <section onClick={displayPostOptionFunction}>•••</section>
         <div className="popup-msg" style={{ display: displayPostOption }}>
           <div className="overlay"></div>
