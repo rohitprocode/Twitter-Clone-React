@@ -13,6 +13,8 @@ function MidContainer() {
   
   const [postAction, setPostAction] = useState("Post");
 
+  const [updatedData,setupdatedData] = useState("");
+
   const deleteSelectedFunction = (id) => {
     setInitialOutput((oldData) => {
       return oldData.filter((arrElement, index) => {
@@ -27,6 +29,10 @@ function MidContainer() {
     setPostAction("Edit")
   };
 
+  const updateVideo = (data) =>{
+    setupdatedData(data)
+  }
+
   return (
     <div className="MidContainer">
       <PublishContainer 
@@ -34,7 +40,8 @@ function MidContainer() {
       setInputField={setInputField}
       InitialOutput={InitialOutput}
       setInitialOutput={setInitialOutput}
-      postAction={postAction} 
+      postAction={postAction}
+      updateVideo={updateVideo} 
       />
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
@@ -44,6 +51,7 @@ function MidContainer() {
             key={index}
             onDeleteSelect={deleteSelectedFunction}
             onEditSelect={editSelectedFunction}
+            updatedData={updatedData}
           />
         ))}
       </div>

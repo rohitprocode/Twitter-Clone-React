@@ -6,17 +6,21 @@ function PublishContainer({
   InitialOutput,
   setInitialOutput,
   postAction,
+  updateVideo
 }) {
   const inputChange = (event) => {
     setInputField(event.target.value);
   };
 
   const PostEditBtnFunc = () => {
+    // Post Action 
     if (postAction == "Post") {
       if (inputField) {
         setInputField("");
         setInitialOutput([...InitialOutput, inputField]);
       }
+    }else{
+       updateVideo(inputField)
     }
   };
 

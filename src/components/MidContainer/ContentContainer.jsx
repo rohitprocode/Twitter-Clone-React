@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContentContainer.css";
 
-function ContentBox({ postData, id, onDeleteSelect, onEditSelect }) {
+function ContentBox({ postData, id, onDeleteSelect, onEditSelect, updatedData }) {
   const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
   const [like, setlike] = useState(true);
   const [likeicon, setlikeicon] = useState("like");
