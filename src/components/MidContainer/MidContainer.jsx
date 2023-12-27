@@ -6,14 +6,13 @@ import PublishContainer from "./PublishContainer";
 function MidContainer() {
   // const [InitialOutput, setInitialOutput] = useState([]);
 
-  
   const [inputField, setInputField] = useState("");
-  
+
   const [InitialOutput, setInitialOutput] = useState([]);
-  
+
   const [postAction, setPostAction] = useState("Post");
 
-  const [updatedData,setupdatedData] = useState("");
+  const [updatedDataId, setupdatedDataId] = useState("");
 
   const deleteSelectedFunction = (id) => {
     setInitialOutput((oldData) => {
@@ -25,23 +24,24 @@ function MidContainer() {
 
   const editSelectedFunction = (id) => {
     // setInputField(InitialOutput.find(editzz => editzz.id === id))
-    setInputField(InitialOutput[id])
-    setPostAction("Edit")
+    setInputField(InitialOutput[id]);
+    setPostAction("Edit");
+    setupdatedDataId(id)
   };
 
-  const updateVideo = (data) =>{
-    setupdatedData(data)
-  }
 
+  
   return (
     <div className="MidContainer">
-      <PublishContainer 
-      inputField={inputField}
-      setInputField={setInputField}
-      InitialOutput={InitialOutput}
-      setInitialOutput={setInitialOutput}
-      postAction={postAction}
-      updateVideo={updateVideo} 
+      <PublishContainer
+        inputField={inputField}
+        setInputField={setInputField}
+        InitialOutput={InitialOutput}
+        setInitialOutput={setInitialOutput}
+        postAction={postAction}
+        setPostAction={setPostAction}
+        updatedDataId={updatedDataId}
+       
       />
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
@@ -51,7 +51,7 @@ function MidContainer() {
             key={index}
             onDeleteSelect={deleteSelectedFunction}
             onEditSelect={editSelectedFunction}
-            updatedData={updatedData}
+
           />
         ))}
       </div>

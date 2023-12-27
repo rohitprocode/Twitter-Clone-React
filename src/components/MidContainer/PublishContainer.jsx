@@ -6,21 +6,33 @@ function PublishContainer({
   InitialOutput,
   setInitialOutput,
   postAction,
-  updateVideo
+  setPostAction,
+  updateVideo,
+  updatedDataId,
 }) {
   const inputChange = (event) => {
     setInputField(event.target.value);
   };
 
   const PostEditBtnFunc = () => {
-    // Post Action 
+    // Post Action
     if (postAction == "Post") {
       if (inputField) {
         setInputField("");
         setInitialOutput([...InitialOutput, inputField]);
       }
-    }else{
-       updateVideo(inputField)
+    } else {
+      //  updateVideo(inputField)
+      // console.log(InitialOutput);
+      // console.log([updatedDataId]);
+      // console.log(inputField);
+      // console.log([InitialOutput[updatedDataId]=inputField])
+      setInitialOutput([
+        ...InitialOutput,
+        ([InitialOutput[updatedDataId]] = inputField),
+      ]);
+      setPostAction("Post");
+      setInputField("");
     }
   };
 
