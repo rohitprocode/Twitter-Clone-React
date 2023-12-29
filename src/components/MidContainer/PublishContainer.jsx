@@ -7,7 +7,7 @@ function PublishContainer({
   setInitialOutput,
   postAction,
   setPostAction,
-  updateVideo,
+  UpdatedData,
   updatedDataId,
 }) {
   const inputChange = (event) => {
@@ -27,10 +27,10 @@ function PublishContainer({
       // console.log([updatedDataId]);
       // console.log(inputField);
       // console.log([InitialOutput[updatedDataId]=inputField])
-      setInitialOutput([
-        ...InitialOutput,
-        ([InitialOutput[updatedDataId]] = inputField),
-      ]);
+      UpdatedData(
+        [...InitialOutput],
+        (InitialOutput[updatedDataId] = inputField)
+      );
       setPostAction("Post");
       setInputField("");
     }

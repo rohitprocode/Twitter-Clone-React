@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContentContainer.css";
 
-function ContentBox({ postData, id, onDeleteSelect, onEditSelect}) {
+function ContentBox({ postData, id, onDeleteSelect, onEditSelect }) {
   const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
   const [like, setlike] = useState(true);
   const [likeicon, setlikeicon] = useState("like");
@@ -36,10 +36,10 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect}) {
     setdisplayPostOption("none");
   };
 
-  const editFunction = () =>{
+  const editFunction = () => {
     onEditSelect(id);
     setdisplayPostOption("none");
-  }
+  };
 
   return (
     <div className="ContentContainer">
@@ -59,7 +59,9 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect}) {
           <div className="popupMsgContentBox">
             <button onClick={displayPostOptionFunctionClose}>X</button>
             <div className="Action">
-              <h4 id="EditAction" onClick={editFunction} >Edit</h4>
+              <h4 id="EditAction" onClick={editFunction}>
+                Edit
+              </h4>
               <h4 id="DeleteAction" onClick={deleteFunction}>
                 Delete
               </h4>

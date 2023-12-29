@@ -23,14 +23,18 @@ function MidContainer() {
   };
 
   const editSelectedFunction = (id) => {
-    // setInputField(InitialOutput.find(editzz => editzz.id === id))
     setInputField(InitialOutput[id]);
     setPostAction("Edit");
-    setupdatedDataId(id)
+    setupdatedDataId(id);
   };
 
+  const UpdatedData = (updated) => {
+    // const index = InitialOutput.findIndex(v=>v.id===updated.id);
+    // const newData = [InitialOutput]
+    // console.log(newData)
+    // console.log(updated)
+  };
 
-  
   return (
     <div className="MidContainer">
       <PublishContainer
@@ -41,7 +45,7 @@ function MidContainer() {
         postAction={postAction}
         setPostAction={setPostAction}
         updatedDataId={updatedDataId}
-       
+        UpdatedData={UpdatedData}
       />
       <div className="contentPublish">
         {InitialOutput.map((data, index) => (
@@ -51,7 +55,6 @@ function MidContainer() {
             key={index}
             onDeleteSelect={deleteSelectedFunction}
             onEditSelect={editSelectedFunction}
-
           />
         ))}
       </div>
