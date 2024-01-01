@@ -23,11 +23,6 @@ function PublishContainer({
       }
       
     } else {
-      //  updateVideo(inputField)
-      // console.log(InitialOutput);
-      // console.log([updatedDataId]);
-      // console.log(inputField);
-      // console.log([InitialOutput[updatedDataId]=inputField])
       UpdatedData(
         [...InitialOutput],
         (InitialOutput[updatedDataId] = inputField)

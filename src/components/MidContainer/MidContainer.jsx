@@ -4,7 +4,6 @@ import ContentContainer from "./ContentContainer";
 import PublishContainer from "./PublishContainer";
 
 function MidContainer() {
-  // const [InitialOutput, setInitialOutput] = useState([]);
 
   const [inputField, setInputField] = useState("");
 
@@ -28,12 +27,7 @@ function MidContainer() {
     setupdatedDataId(id);
   };
 
-  const UpdatedData = (updated) => {
-    // const index = InitialOutput.findIndex(v=>v.id===updated.id);
-    // const newData = [InitialOutput]
-    // console.log(newData)
-    // console.log(updated)
-  };
+  const UpdatedData = (updated) => {};
 
  
 
