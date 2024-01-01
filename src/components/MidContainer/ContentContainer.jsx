@@ -1,13 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContentContainer.css";
 
-function ContentBox({ postData, id, onDeleteSelect, onEditSelect }) {
+function ContentBox({ postData, id, onDeleteSelect, onEditSelect, postDate }) {
   const [mouseHoverLike, setmouseHoverLike] = useState("../like.png");
   const [like, setlike] = useState(true);
   const [likeicon, setlikeicon] = useState("like");
   const [likeCount, setlikeCount] = useState(0);
   const [likeDisplay, setlikeDisplay] = useState("none");
   const [displayPostOption, setdisplayPostOption] = useState("none");
+  const [post_Date, setPost_Date] = useState("");
+
+  useEffect(() => {
+    const TodayDate = new Date();
+    const Monthname = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    let getMonthName = TodayDate.getMonth();
+    setPost_Date(
+      TodayDate.getDay() +
+        " " +
+        Monthname[getMonthName] +
+        " " +
+        TodayDate.getFullYear()
+    );
+  });
 
   const changeLikeIcon = () => {
     if (like) {
@@ -49,7 +76,7 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect }) {
           <div className="postUserInfoBox">
             <h4>Rohit Rathore</h4>
             <span>@rohitprocode</span> <span>•</span>
-            <span>1s</span>
+            <span>{post_Date}</span>
           </div>
           <div className="postContent">{postData}</div>
         </div>

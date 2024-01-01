@@ -21,6 +21,7 @@ function PublishContainer({
         setInputField("");
         setInitialOutput([...InitialOutput, inputField]);
       }
+      
     } else {
       //  updateVideo(inputField)
       // console.log(InitialOutput);

@@ -35,6 +35,8 @@ function MidContainer() {
     // console.log(updated)
   };
 
+ 
+
   return (
     <div className="MidContainer">
       <PublishContainer
