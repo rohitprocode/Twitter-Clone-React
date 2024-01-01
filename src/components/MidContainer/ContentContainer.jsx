@@ -41,7 +41,7 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect, postDate }) {
     if (like) {
       setmouseHoverLike("../like2.png");
       setlikeicon("like2");
-      setlikeDisplay(""); 
+      setlikeDisplay("");
       setlikeCount(1);
     } else {
       setmouseHoverLike("../like.png");
