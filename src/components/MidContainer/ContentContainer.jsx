@@ -10,6 +10,7 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect, postDate }) {
   const [displayPostOption, setdisplayPostOption] = useState("none");
   const [post_Date, setPost_Date] = useState("");
 
+  //Use of useEffect
   useEffect(() => {
     const TodayDate = new Date();
     const Monthname = [
@@ -40,7 +41,7 @@ function ContentBox({ postData, id, onDeleteSelect, onEditSelect, postDate }) {
     if (like) {
       setmouseHoverLike("../like2.png");
       setlikeicon("like2");
-      setlikeDisplay("");
+      setlikeDisplay(""); 
       setlikeCount(1);
     } else {
       setmouseHoverLike("../like.png");
